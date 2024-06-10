@@ -17,16 +17,23 @@ code {
     monospace;
 }
 
-.container {
-  border: 1px solid black;
-  height: 100px;
-}
+/*.container {*/
+/*  border: 1px solid black;*/
+/*  height: 100px;*/
+/*}*/
 
 .navigation-menu__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 30px;
+}
+
+.contacts-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 30px;
 }
 
 

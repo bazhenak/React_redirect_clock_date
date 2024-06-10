@@ -12,7 +12,7 @@ function Clock() {
 
         // Clear the interval when the component unmounts
         return () => clearInterval(interval);
-    }, []);
+    }, [])
 
     // Extract the hours, minutes, and seconds from the current time
     const hours = time.getHours();

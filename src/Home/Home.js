@@ -4,6 +4,8 @@ import './Clock.js'
 import Clock from "./Clock";
 import GetDate from "./Date";
 import StateComponent from "./Coordinates";
+import GetUserAgent from "./UserAgent";
+
 
 const Home = () => {
     return (
@@ -24,6 +26,11 @@ const Home = () => {
             <div>
                 <p>Mouse coordinates (x) :</p>
                 <StateComponent/>
+            </div>
+
+            <div>
+                <p>Your user agent :</p>
+                <GetUserAgent/>
             </div>
 
         </div>
