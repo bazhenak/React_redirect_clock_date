@@ -15,9 +15,9 @@ function Clock() {
     }, [])
 
     // Extract the hours, minutes, and seconds from the current time
-    const hours = time.getHours();
-    const minutes = time.getMinutes();
-    const seconds = time.getSeconds();
+    const hours = (time.getHours() < 10 ? '0' : '') + time.getHours();
+    const minutes = (time.getMinutes() < 10 ? '0' : '') + time.getMinutes();
+    const seconds = (time.getSeconds() < 10 ? '0' : '') + time.getSeconds();
 
     // Format the time as a string
     const timeString = `${hours}:${minutes}:${seconds}`;

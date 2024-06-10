@@ -15,8 +15,8 @@ function GetDate() {
     }, []);
 
     // Extract the hours, minutes, and seconds from the current time
-    const date = time.getDate();
-    const month = time.getMonth() + 1;
+    const date = (time.getDate() < 10 ? '0' : '') + time.getDate();
+    const month = (time.getMonth() < 9 ? '0' : '') + (time.getMonth() + 1);
     const year = time.getFullYear();
 
 
