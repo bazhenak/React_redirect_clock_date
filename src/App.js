@@ -3,7 +3,7 @@ import {Link, Route, Routes} from "react-router-dom";
 import './Home/Home.js'
 import Home from "./Home/Home";
 import Redirect from "./Redirect/Redirect";
-import About from "./About/About";
+import NewLink from "./NewLink/NewLink";
 
 
 export default function App() {
@@ -16,18 +16,18 @@ export default function App() {
                       <Link to='/home'>Главная</Link>
                   </div>
                   <div>
-                      <Link to='/contacts'>Redirect</Link>
+                      <Link to='/redirect'>Redirect</Link>
                   </div>
                   <div>
-                      <Link to='/about'>О нас</Link>
+                      <Link to='/go_to'>Go to</Link>
                   </div>
               </div>
           </nav>
         </div>
         <Routes>
             <Route path='/home' element={<Home />} />
-            <Route path='/contacts' element={<Redirect />} />
-            <Route path='/about' element={<About />} />
+            <Route path='/redirect' element={<Redirect />} />
+            <Route path='/go_to' element={<NewLink />} />
         </Routes>
     </div>
   );

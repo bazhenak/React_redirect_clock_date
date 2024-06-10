@@ -7,11 +7,11 @@
 //
 // function Redirect() {
 //
-//     let navigate = useNavigate();
+//     const navigate = useNavigate();
 //     const routeChange = () => {
 //         let path = `newPath`;
 //         navigate(path)
-//
+//     }
 //         return (
 //             <div className='contacts-page-container'>
 //                 <p>просто параграф</p>
@@ -20,21 +20,21 @@
 //                 </button>
 //             </div>
 //         );
-//     }
 // }
 //
 // export default Redirect;
 
 
 import React from "react";
+import {Link, useNavigate} from "react-router-dom";
 
-function GetRedirected() {
+ const GetRedirected = ()=> {
 
 
     return (
-        <div>
-            <button className='button' onClick={event =>  window.location.href='../Home/Home.js'}>На главную</button>
-        </div>
+        <>
+            <button className='button'> <Link to='/home'>На главную</Link></button>
+        </>
     );
 };
 
